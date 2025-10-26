@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest ",
     "dev": "ts-node src/index.ts",
     "lint": "eslint \"**/*.ts\"",
     "lint:fix": "eslint \"**/*.ts\" --fix",
@@ -19,11 +20,14 @@
     "@typescript-eslint/eslint-plugin-tslint": "^7.0.2",
     "@typescript-eslint/parser": "^8.46.2",
     "git-conventional-commits": "^2.8.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "uuid": "^13.0.0",
+    "vitest": "^4.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
     "eslint": "^9.38.0",
+    "lint-staged": "^16.2.6",
     "prettier": "3.6.2",
     "stylelint-config-prettier": "^9.0.5",
     "typescript": "^5.9.3",

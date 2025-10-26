@@ -4,6 +4,4 @@
     "*": "prettier --write",
   "*.json": "prettier --write",
   "*.{ts,js,json,md}": "pnpm stylelint-check"
-
-
 }

@@ -1,1 +1,4 @@
+pnpm run lint
+pnpm run format
+pnpm run lint:fix
 pnpm test
