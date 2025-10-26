@@ -1,16 +1,21 @@
 _Technical Stack_
 
-      Area	                                                  Tech Stack
+|          Area	                |                                Tech Stack                         |
+-----------------------------------------------------------------------------------------------------         
 
-[ ] - Language	                               TypeScript
-[ ] - Framework	                               NestJS or Express + custom architecture
-[ ] - Database	                               PostgreSQL (SQL) + Redis (cache)
-[ ] - Message Queue	                           RabbitMQ / Kafka
-[ ] - Containerization	                       Docker & Docker Compose
-[ ] - Testing	                               Jest + Supertest (unit + integration)
-[ ] - CI/CD	                                   GitHub Actions
-[ ] - Deployment	                           Docker Swarm / AWS ECS / Render / Railway
-[ ] - API Documentation	                       OpenAPI (Swagger)
+[ ] - Language	                |                      TypeScript
+[ ] - Framework	                |                      NestJS or Express + custom architecture
+[ ] - Database	                |                      PostgreSQL (SQL) + Redis (cache)
+[ ] - Message Queue	            |                      RabbitMQ / Kafka
+[ ] - Containerization	        |                      Docker & Docker Compose
+[ ] - Testing	                |                      Jest + Supertest (unit + integration)
+[ ] - CI/CD	                    |                      GitHub Actions
+[ ] - Deployment	            |                      Docker Swarm / AWS ECS / Render / Railway
+[ ] - API Documentation	        |                      OpenAPI (Swagger)
+
+
+
+
 
 
 _Learning Goals_
