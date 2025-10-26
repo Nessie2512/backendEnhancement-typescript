@@ -1,0 +1,9 @@
+{
+  "*.ts": "eslint --fix",
+  "*.md": "prettier --list-different",
+    "*": "prettier --write",
+  "*.json": "prettier --write",
+  "*.{ts,js,json,md}": "pnpm stylelint-check"
+
+
+}
