@@ -1,8 +1,8 @@
 import Identifier from "../../../core/identifier.vo.ts";
-import User from "../domain/user.entity.ts";
+import User from "../../user/domain/entity/user.entity.ts";
 import UserRepository from "../repo/user.repository.ts";
 
-export default class DeleteUserUseCase {
+export default class FindAllUserUseCase {
     private UserRepository: UserRepository;
     constructor(Repository: UserRepository) {
         this.UserRepository = Repository;

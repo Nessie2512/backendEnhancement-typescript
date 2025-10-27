@@ -17,8 +17,10 @@
   "license": "ISC",
   "packageManager": "pnpm@10.19.0",
   "dependencies": {
+    "@types/express": "^5.0.4",
     "@typescript-eslint/eslint-plugin-tslint": "^7.0.2",
     "@typescript-eslint/parser": "^8.46.2",
+    "express": "^5.1.0",
     "git-conventional-commits": "^2.8.0",
     "ts-node": "^10.9.2",
     "uuid": "^13.0.0",

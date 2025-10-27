@@ -7,6 +7,6 @@ export default abstract class TaskRepository  implements RepositoryCore<Task>{
     abstract findAll(): Promise<Task[]>;
     abstract findById(id: Identifier): Promise<Task | null>;
     abstract findByEmail(email: string): Promise<Task | null> 
-    abstract update(id: Identifier, entity: Partial<Task>): Promise<Task>;
+    abstract update(id: Identifier, entity: Partial<Task>): Promise<void>;
     abstract delete(id: Identifier): Promise<void>;
 }

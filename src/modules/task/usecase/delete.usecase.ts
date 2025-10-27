@@ -2,7 +2,7 @@ import Identifier from "../../../core/identifier.vo.ts";
 import TaskRepository from "../repo/task.repository.ts";
 
 
-export default class DeleteUserUseCase {
+export default class DeleteTaskUseCase {
     private TaskRepository: TaskRepository;
     constructor(Repository: TaskRepository) {
         this.TaskRepository = Repository;

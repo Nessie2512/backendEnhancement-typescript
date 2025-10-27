@@ -1,7 +1,7 @@
-import AggregateRoot from "../../../core/aggregate-root.ts";
-import Entity from "../../../core/entity.ts";
-import Identifier from "../../../core/identifier.vo.ts";
-import Task from "../../task/domain/tasks.entity.ts";
+import AggregateRoot from "../../../../core/aggregate-root.ts";
+import Entity from "../../../../core/entity.ts";
+import Identifier from "../../../../core/identifier.vo.ts";
+import Task from "../../../task/domain/tasks.entity.ts";
 
 
 

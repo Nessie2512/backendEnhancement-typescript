@@ -8,6 +8,6 @@ export default interface RepositoryCore<T extends Entity<any>> {
     findById(id: Identifier): Promise<T | null>;
     findByEmail(email: string): Promise<T | null>;
     delete(id:Identifier): Promise<void>;
-    update(id: Identifier, entity: Partial<T>): Promise<T>;
+    update(id: Identifier, entity: Partial<T>): Promise<void>;
     findAll(): Promise<T[]>;
 }
