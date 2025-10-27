@@ -6,7 +6,7 @@ export type TaskStatus = 'pending' | 'in-progress' | 'completed';
 export type phase = {description:string, phaseno:number, completed:boolean}
 
 
-interface TasksProps { 
+export interface TasksProps { 
     title: string
     description: string
     dueDate: Date
