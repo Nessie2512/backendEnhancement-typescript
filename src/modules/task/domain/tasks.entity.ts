@@ -9,18 +9,21 @@ export type phase = {description:string, phaseno:number, completed:boolean}
 interface TasksProps { 
     title: string
     description: string
-    status: TaskStatus 
-    completed: boolean
     dueDate: Date
     User: User
-    phases: phase[]
+    
 }
 
 
 export default class Task extends Entity<TasksProps> {
-
+    private status: TaskStatus;
+    private completed: boolean;
+    private phases: phase[];
     private constructor(props: TasksProps, id?: Identifier) {
         super(props, id);
+        this.status = 'pending';
+        this.completed = false;
+        this.phases = [];
     }
 
     static createTask(props: TasksProps, id?: string) {
@@ -29,14 +32,14 @@ export default class Task extends Entity<TasksProps> {
     }
 
     addPhase(description: string): void {
-        const phase: phase = {description: description, phaseno: this.Props.phases.length + 1, completed: false};
-        if(!this.Props.phases.includes(phase))
-        this.Props.phases.push(phase);
+        const phase: phase = {description: description, phaseno: this.phases.length + 1, completed: false};
+        if(!this.phases.includes(phase))
+        this.phases.push(phase);
         this.updateEntity();
     }
 
     markPhaseAsCompleted(phaseno: number): void {
-        const phase = this.Props.phases.find(p => p.phaseno === phaseno);
+        const phase = this.phases.find(p => p.phaseno === phaseno);
         if (phase) {
             phase.completed = true;
             this.updateEntity();
@@ -52,19 +55,34 @@ export default class Task extends Entity<TasksProps> {
     }
 
     getStatus(): TaskStatus {
-        return this.Props.status;
+        return this.status;
+    }
+
+    getPhases(){
+        return this.phases
     }
 
     markAsCompleted(): void {
-        const notCompletedPhases = this.Props.phases.filter(phase => !phase.completed);
-        if (notCompletedPhases.length < 0)
-        this.Props.status === 'completed'
-        this.Props.completed = true;
+        const notCompletedPhases = this.phases.filter(phase => phase.completed === false);
+        if (notCompletedPhases.length){
+        this.status === 'completed'
+        this.completed = true;
         this.updateEntity();
+        }
     }
     
     isCompleted(): boolean {
-        return this.Props.completed;
+        return this.completed;
+    }
+
+    markPhaseasCompleted(id:number):void{
+        const phaseToMark = this.phases.find(p => p.phaseno == id);
+        if(phaseToMark) phaseToMark.completed = true;
+    }
+
+    unmarkPhaseAscompleted(id:number):void{
+        const phaseToMark = this.phases.find(p => p.phaseno == id);
+        if(phaseToMark) phaseToMark.completed = false;
     }
 
 

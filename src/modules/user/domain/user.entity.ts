@@ -24,7 +24,7 @@ export default class User extends Entity<UserProps> implements AggregateRoot{
         return new User(props, identifier);
     }
 
-    getFullName(): string {
+    public getFullName(): string {
         return `${this.Props.fname} ${this.Props.lname}`;
     }
 
@@ -60,6 +60,14 @@ export default class User extends Entity<UserProps> implements AggregateRoot{
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
+
+    addTask(task: Task): void {
+        
+        if (!this.Props.tasks) {this.Props.tasks = [];}
+        if(!this.Props.tasks.includes(task))
+        this.Props.tasks.push(task);
+        this.updateEntity();
+    }   
 
     
 }
