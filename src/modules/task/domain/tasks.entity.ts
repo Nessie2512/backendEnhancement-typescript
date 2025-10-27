@@ -62,6 +62,14 @@ export default class Task extends Entity<TasksProps> {
         return this.phases
     }
 
+    getDueDate(): Date {
+        return this.Props.dueDate;
+    }
+
+    getUser(): User {
+        return this.Props.User;
+    }
+
     markAsCompleted(): void {
         const notCompletedPhases = this.phases.filter(phase => phase.completed === false);
         if (notCompletedPhases.length){
