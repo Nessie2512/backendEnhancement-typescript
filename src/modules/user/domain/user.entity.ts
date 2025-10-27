@@ -5,7 +5,7 @@ import Task from "../../task/domain/tasks.entity.ts";
 
 
 
-interface UserProps { 
+export interface UserProps { 
     fname:string
     lname:string
     email:string
