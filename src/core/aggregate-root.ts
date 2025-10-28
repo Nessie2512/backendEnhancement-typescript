@@ -1,2 +1,2 @@
 
-export default interface AggregateRoot {}
+export default abstract class AggregateRoot {}

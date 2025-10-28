@@ -1,4 +1,5 @@
-import User, { UserProps } from "../domain/user.entity.ts";
+import type { UserProps } from "../domain/entity/user.entity.ts"
+import User from "../domain/entity/user.entity.ts";
 import UserRepository from "../repo/user.repository.ts";
 
 export default class CreateUserUseCase {

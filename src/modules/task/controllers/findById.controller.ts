@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import findByIdTaskcase from "../usecase/findById.usecase.ts";
 
 export default class findById{

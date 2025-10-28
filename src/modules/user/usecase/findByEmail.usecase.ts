@@ -1,5 +1,4 @@
 
-import Identifier from "../../../core/identifier.vo.ts";
 import UserRepository from "../repo/user.repository.ts";
 
 export default class findByEmailUsecase {

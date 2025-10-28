@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import findByEmailUsecase from "../usecase/findByEmail.usecase.ts";
 import findByIdUsecase from "../usecase/findById.usecase.ts";
 

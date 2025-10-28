@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
-import { UserProps } from "../domain/entity/user.entity.ts";
+import type { Request, Response } from "express";
+import type { UserProps } from "../domain/entity/user.entity.ts";
 import CreateUserUseCase from "../usecase/create.usecase.ts";
 
 export default class CreateUser{

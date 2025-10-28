@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import FindAllUserUseCase from "../../user/usecase/findAll.usecase.ts";
 import FindAllTaskUseCase from "../usecase/findAll.usecase.ts";
 

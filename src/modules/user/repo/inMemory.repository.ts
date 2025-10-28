@@ -1,5 +1,5 @@
 import Identifier from "../../../core/identifier.vo.ts";
-import User, { UserProps } from "../domain/entity/user.entity.ts";
+import User from "../domain/entity/user.entity.ts";
 import UserRepository from "./user.repository.ts";
 
 export default class InMemoryUserRepository implements UserRepository {

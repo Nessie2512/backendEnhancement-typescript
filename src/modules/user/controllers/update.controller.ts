@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import UpdateUserUseCase from "../usecase/update.usecase.ts";
 import User from "../domain/entity/user.entity.ts";
 

@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import CreateTaskUseCase from "../usecase/create.usecase.ts";
-import { TasksProps } from "../domain/tasks.entity.ts";
+import type { TasksProps } from "../domain/tasks.entity.ts";
 
 
 export default class CreateTask{

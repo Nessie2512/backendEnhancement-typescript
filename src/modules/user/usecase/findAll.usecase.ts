@@ -1,5 +1,4 @@
-import Identifier from "../../../core/identifier.vo.ts";
-import User from "../../user/domain/entity/user.entity.ts";
+import User from "../domain/entity/user.entity.ts";
 import UserRepository from "../repo/user.repository.ts";
 
 export default class FindAllUserUseCase {

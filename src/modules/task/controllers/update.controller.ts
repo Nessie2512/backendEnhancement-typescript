@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import UpdateTaskUseCase from "../usecase/update.usecase.ts";
 import Task from "../domain/tasks.entity.ts";
 

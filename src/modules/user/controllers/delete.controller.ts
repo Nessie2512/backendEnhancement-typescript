@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import DeleteUserUseCase from "../usecase/delete.usecase.ts";
 
 export default class DeleteUser{

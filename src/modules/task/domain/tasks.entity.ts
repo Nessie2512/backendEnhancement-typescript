@@ -1,6 +1,6 @@
 import Entity from "../../../core/entity.ts";
 import Identifier from "../../../core/identifier.vo.ts";
-import User from "../../user/domain/user.entity.ts";
+import User from "../../user/domain/entity/user.entity.ts";
 
 export type TaskStatus = 'pending' | 'in-progress' | 'completed';
 export type phase = {description:string, phaseno:number, completed:boolean}

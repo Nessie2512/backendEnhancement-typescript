@@ -1,4 +1,5 @@
-import Task, { TasksProps } from "../domain/tasks.entity.ts";
+import type { TasksProps } from "../domain/tasks.entity.ts"
+import Task from "../domain/tasks.entity.ts";
 import TaskRepository from "../repo/task.repository.ts";
 
 

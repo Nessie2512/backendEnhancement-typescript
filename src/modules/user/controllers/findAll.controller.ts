@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import FindAllUserUseCase from "../usecase/findAll.usecase.ts";
 
 export default class FindAll {
